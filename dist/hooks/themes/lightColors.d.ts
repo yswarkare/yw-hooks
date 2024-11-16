@@ -1,0 +1,23 @@
+declare const lightColors: {
+    primary_50: string;
+    primary_100: string;
+    primary_200: string;
+    primary_300: string;
+    primary_400: string;
+    primary_500: string;
+    primary_600: string;
+    primary_700: string;
+    primary_800: string;
+    primary_900: string;
+    surface_50: string;
+    surface_100: string;
+    surface_200: string;
+    surface_300: string;
+    surface_400: string;
+    surface_500: string;
+    surface_600: string;
+    surface_700: string;
+    surface_800: string;
+    surface_900: string;
+};
+export default lightColors;
