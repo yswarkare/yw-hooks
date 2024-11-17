@@ -1,15 +1,15 @@
 import { useEffect, useState } from 'react';
 
-const getStoredValue = (key: string, initialValue: any = null) => {
+function getStoredValue<T> (key: string, initialValue: T) {
 	let storedValue = sessionStorage.getItem(key);
 	if (storedValue) return JSON.parse(storedValue);
 	if (initialValue instanceof Function) return initialValue();
 	return initialValue;
 };
 
-const useSessionStorage = (key: string, initialValue: any) => {
+function useSessionStorage<T> (key: string, initialValue: T){
 	const [value, setValue] = useState(() => {
-		return getStoredValue(key, initialValue);
+		return getStoredValue<T>(key, initialValue);
 	});
 
 	useEffect(() => {

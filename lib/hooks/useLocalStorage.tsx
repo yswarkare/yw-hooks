@@ -7,7 +7,7 @@ const getStoredValue = (key: string, initialValue: any = null) => {
 	return initialValue;
 };
 
-const useLocalStorage = (key: string, initialValue: any) => {
+function useLocalStorage<T> (key: string, initialValue: T) {
 	const [value, setValue] = useState(() => {
 		return getStoredValue(key, initialValue);
 	});
