@@ -9,24 +9,23 @@ NOTE: The YouTuber [Web Dev Simplified](https://www.youtube.com/@WebDevSimplifie
 ## Table of contents
 
 - [15 Useful React Custom Hooks That You Can Use In Any Project](#15-useful-react-custom-hooks-that-you-can-use-in-any-project)
-  - [Table of contents](#table-of-contents)
-    - [1. useToggle](#1-usetoggle)
-    - [2. useTimeout](#2-usetimeout)
-    - [3. useDebounce](#3-usedebounce)
-    - [4. useUpdateEffect](#4-useupdateeffect)
-    - [5. useArray](#5-usearray)
-    - [6. usePrevious](#6-useprevious)
-    - [7. useStateWithHistory](#7-usestatewithhistory)
-    - [8. useStorage](#8-usestorage)
-    - [9. useAsync](#9-useasync)
-    - [10. useFetch](#10-usefetch)
-    - [11. useScript](#11-usescript)
-    - [12. useDeepCompareEffect](#12-usedeepcompareeffect)
-    - [13. useEventListener](#13-useeventlistener)
-    - [14. useOnScreen](#14-useonscreen)
-    - [15. useWindowSize](#15-usewindowsize)
-  - [Conclusion](#conclusion)
-
+	- [Table of contents](#table-of-contents)
+		- [1. useToggle](#1-usetoggle)
+		- [2. useTimeout](#2-usetimeout)
+		- [3. useDebounce](#3-usedebounce)
+		- [4. useUpdateEffect](#4-useupdateeffect)
+		- [5. useArray](#5-usearray)
+		- [6. usePrevious](#6-useprevious)
+		- [7. useStateWithHistory](#7-usestatewithhistory)
+		- [8. useStorage](#8-usestorage)
+		- [9. useAsync](#9-useasync)
+		- [10. useFetch](#10-usefetch)
+		- [11. useScript](#11-usescript)
+		- [12. useDeepCompareEffect](#12-usedeepcompareeffect)
+		- [13. useEventListener](#13-useeventlistener)
+		- [14. useOnScreen](#14-useonscreen)
+		- [15. useWindowSize](#15-usewindowsize)
+	- [Conclusion](#conclusion)
 
 ### 1. useToggle
 
@@ -987,3 +986,4 @@ This hook can be helpful in situations where you want to make a responsive desig
 ## Conclusion
 
 These custom hooks can be essential when making good scalable and bug-free projects. They work like a charm, even on significant projects. Therefore feel free to use them whenever you need them. So, Thanks for reading this article, guys. I know It was a bit lengthy. However, I hope that It was worthwhile reading it. See you all in my next article😊.
+
