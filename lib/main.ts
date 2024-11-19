@@ -8,6 +8,7 @@ import useEventListener from './hooks/useEventListener';
 import useFetch from './hooks/useFetch';
 import useForm from './hooks/useForm';
 import useLocalStorage from './hooks/useLocalStorage';
+import useObjectReducer from './hooks/useObjectReducer';
 import useOnScreen from './hooks/useOnScreen';
 import usePrevious from './hooks/usePrevious';
 import useScript from './hooks/useScript';
@@ -31,6 +32,7 @@ export {
 	useFetch,
 	useForm,
 	useLocalStorage,
+	useObjectReducer,
 	useOnScreen,
 	usePrevious,
 	useScript,

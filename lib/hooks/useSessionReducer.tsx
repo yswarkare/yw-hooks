@@ -1,4 +1,4 @@
-import { useEffect, useReducer } from 'react';
+import { Reducer, useEffect, useReducer } from 'react';
 
 const getStoredState = (key: string, initialState: any = null) => {
 	let storedState = sessionStorage.getItem(key);
@@ -7,7 +7,7 @@ const getStoredState = (key: string, initialState: any = null) => {
 	return initialState;
 };
 
-const useSessionReducer = (reducer: React.ReducerWithoutAction<any>, initialState: any, key: string) => {
+function useSessionReducer(reducer: Reducer<any, any>, initialState: any, key: string) {
 	const [state, dispatch] = useReducer(reducer, initialState, () => {
 		return getStoredState(key, initialState);
 	});
