@@ -64,6 +64,8 @@ export default function ToggleComponent() {
 }
 ```
 
+[🔝 Back to table of contents](#table-of-contents)
+
 ### 2. useTimeout
 
 ```javascript
@@ -141,6 +143,8 @@ This custom `useTimeout` hook can be helpful in various situations where a compo
 
 It can be used in any situation where you need to wait for a certain amount of time before acting or to repeat an action multiple times with a delay between them.
 
+[🔝 Back to table of contents](#table-of-contents)
+
 ### 3. useDebounce
 
 ```javascript
@@ -184,6 +188,8 @@ export default function DebounceComponent() {
 ```
 
 This hook can be helpful in situations where you want to limit the number of times a callback function is invoked in a short period. For example, when you have an input field that sends a search request to the server on every keystroke, you should wait for a user to stop typing before sending the request to avoid unnecessary network traffic and improve the user experience.
+
+[🔝 Back to table of contents](#table-of-contents)
 
 ### 4. useUpdateEffect
 
@@ -233,6 +239,8 @@ export default function UpdateEffectComponent() {
 ```
 
 This hook can be helpful in situations where you want to run some logic only when specific values change and not on the initial render. For example, when you want to fetch data from an API after the user has selected a particular option from a drop-down menu or when you want to update the position of an element on the screen after the size of the window changes.
+
+[🔝 Back to table of contents](#table-of-contents)
 
 ### 5. useArray
 
@@ -302,6 +310,8 @@ export default function ArrayComponent() {
 
 This hook can be helpful in situations where you want to manage an array of data in the state of a component and perform everyday array operations such as adding, removing, updating, and filtering elements.
 
+[🔝 Back to table of contents](#table-of-contents)
+
 ### 6. usePrevious
 
 ```javascript
@@ -351,6 +361,8 @@ export default function PreviousComponent() {
 ```
 
 This hook can be helpful in situations where you need to have access to the previous value of a variable, for example, when you want to compare the current value with the value earlier to check if it has changed or when you want to track the changes of a variable over time.
+
+[🔝 Back to table of contents](#table-of-contents)
 
 ### 7. useStateWithHistory
 
@@ -469,6 +481,8 @@ Increment
 
 This hook can be helpful in situations where you want to keep track of the state's history, for example, when you want to implement undo or redo functionality or to allow the user to navigate through the history of changes.
 
+[🔝 Back to table of contents](#table-of-contents)
+
 ### 8. useStorage
 
 ```javascript
@@ -547,6 +561,8 @@ export default function StorageComponent() {
 
 This hook can be helpful in situations where you want to persist data across browser sessions or pages and keep the data in sync with the component's state. For example, you can store a user's settings, a form's data, or a to-do list. Using the `useLocalStorage` and `useSessionStorage` hooks provides the flexibility of using the browser's local storage or session storage as per the requirement.
 
+[🔝 Back to table of contents](#table-of-contents)
+
 ### 9. useAsync
 
 ```javascript
@@ -614,6 +630,8 @@ export default function AsyncComponent() {
 
 This hook can be useful in situations where you want to handle async operations such as fetching data from an API, uploading a file, or saving data to a database. It provides a simple way to manage the loading, error, and value states in a component and also allows the component to re-run the async operation when certain values change.
 
+[🔝 Back to table of contents](#table-of-contents)
+
 ### 10. useFetch
 
 ```javascript
@@ -668,6 +686,8 @@ export default function FetchComponent() {
 
 This hook can be helpful in situations where you want to handle fetching data from an API. It provides a simple way to manage the **loading**, **error**, and **value** states in a component and also allows the component.
 
+[🔝 Back to table of contents](#table-of-contents)
+
 ### 11. useScript
 
 ```javascript
@@ -712,6 +732,8 @@ export default function ScriptComponent() {
 ```
 
 This hook can be helpful in situations where you want to load external JavaScript libraries dynamically. It provides a simple way to manage a component's loading, error, and value states and also allows the component to re-load the script when the URL changes.
+
+[🔝 Back to table of contents](#table-of-contents)
 
 ### 12. useDeepCompareEffect
 
@@ -782,6 +804,8 @@ export default function DeepCompareEffectComponent() {
 
 This hook can be helpful in situations where the dependencies are complex objects or arrays, and you want to ensure that the effect only runs when the specific values inside the dependencies have changed. It can help prevent unnecessary re-renders and improve performance.
 
+[🔝 Back to table of contents](#table-of-contents)
+
 ### 13. useEventListener
 
 ```javascript
@@ -832,6 +856,8 @@ export default function EventListenerComponent() {
 ```
 
 This hook can be helpful in situations where you want to handle events such as clicks, key presses, or form submissions in a declarative way and keep your component logic separate from your event-handling logic.
+
+[🔝 Back to table of contents](#table-of-contents)
 
 ### 14. useOnScreen
 
@@ -938,6 +964,8 @@ export default function OnScreenComponentComponent() {
 
 This hook can be helpful when you want to track when a specific DOM element comes into view or goes out of sight, for example, to lazy-load images, track scroll position, or display elements on demand.
 
+[🔝 Back to table of contents](#table-of-contents)
+
 ### 15. useWindowSize
 
 ```javascript
@@ -983,7 +1011,10 @@ export default function WindowSizeComponent() {
 
 This hook can be helpful in situations where you want to make a responsive design and adapt the layout or behavior of a component based on the size of the browser window.
 
+[🔝 Back to table of contents](#table-of-contents)
+
 ## Conclusion
 
 These custom hooks can be essential when making good scalable and bug-free projects. They work like a charm, even on significant projects. Therefore feel free to use them whenever you need them. So, Thanks for reading this article, guys. I know It was a bit lengthy. However, I hope that It was worthwhile reading it. See you all in my next article😊.
 
+[🔝 Back to table of contents](#table-of-contents)

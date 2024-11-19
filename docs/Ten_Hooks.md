@@ -1,30 +1,30 @@
 # Top 10 Most Useful Custom Hooks in React
 
-## Table Of Content
+## Table Of Contents
 
 - [Top 10 Most Useful Custom Hooks in React](#top-10-most-useful-custom-hooks-in-react)
-  - [Table Of Content](#table-of-content)
-  - [1. UseLocalStorage](#1-uselocalstorage)
-    - [Usage-1](#usage-1)
-  - [2. UseForm](#2-useform)
-    - [Usage-2](#usage-2)
-  - [3. UseFetch](#3-usefetch)
-    - [Usage-3](#usage-3)
-  - [4. UseMediaQuery](#4-usemediaquery)
-    - [Usage-4](#usage-4)
-  - [5. UseScroll](#5-usescroll)
-    - [Usage-5](#usage-5)
-  - [6. UseIntersectionObserver](#6-useintersectionobserver)
-    - [Usage-6](#usage-6)
-  - [7. UseAnimation](#7-useanimation)
-    - [Usage-7](#usage-7)
-  - [8. UseDebounce](#8-usedebounce)
-    - [Usage-8](#usage-8)
-  - [9. UseThrottle](#9-usethrottle)
-    - [Usage-9](#usage-9)
-  - [10. UseAuthentication](#10-useauthentication)
-    - [Usage-10](#usage-10)
-  - [Conclusion](#conclusion)
+	- [Table Of Contents](#table-of-contents)
+	- [1. UseLocalStorage](#1-uselocalstorage)
+		- [Usage-1](#usage-1)
+	- [2. UseForm](#2-useform)
+		- [Usage-2](#usage-2)
+	- [3. UseFetch](#3-usefetch)
+		- [Usage-3](#usage-3)
+	- [4. UseMediaQuery](#4-usemediaquery)
+		- [Usage-4](#usage-4)
+	- [5. UseScroll](#5-usescroll)
+		- [Usage-5](#usage-5)
+	- [6. UseIntersectionObserver](#6-useintersectionobserver)
+		- [Usage-6](#usage-6)
+	- [7. UseAnimation](#7-useanimation)
+		- [Usage-7](#usage-7)
+	- [8. UseDebounce](#8-usedebounce)
+		- [Usage-8](#usage-8)
+	- [9. UseThrottle](#9-usethrottle)
+		- [Usage-9](#usage-9)
+	- [10. UseAuthentication](#10-useauthentication)
+		- [Usage-10](#usage-10)
+	- [Conclusion](#conclusion)
 
 
 React’s custom hooks have transformed how developers construct reusable logic and distribute functionality across components. These hooks encapsulate prevalent patterns and behaviors, simplifying the creation of cleaner, more maintainable code. In this article, we will explore the ten most beneficial custom hooks in React, complemented by code examples illustrating their practical utility.
@@ -65,6 +65,8 @@ function useLocalStorage(key, initialValue) {
 ```javascript
 const [name, setName] = useLocalStorage('name', 'John');
 ```
+
+[🔝 Back to table of contents](#table-of-contents)
 
 ## 2. UseForm
 
@@ -110,6 +112,8 @@ const { values, errors, handleChange, handleSubmit } = useForm({ email: '', pass
 });
 ```
 
+[🔝 Back to table of contents](#table-of-contents)
+
 ## 3. UseFetch
 
 Fetching data from APIs is a common task in web applications. The useFetch hook simplifies data fetching by providing a simple interface for making HTTP requests and handling loading, error, and data states.
@@ -148,6 +152,8 @@ function useFetch(url) {
 const { data, loading, error } = useFetch('https://api.example.com/data');
 ```
 
+[🔝 Back to table of contents](#table-of-contents)
+
 ## 4. UseMediaQuery
 
 Creating responsive layouts is crucial for modern web development. The useMediaQuery hook enables developers to conditionally render components based on the user’s device or screen size.
@@ -180,6 +186,8 @@ function useMediaQuery(query) {
 const isMobile = useMediaQuery('(max-width: 768px)');
 ```
 
+[🔝 Back to table of contents](#table-of-contents)
+
 ## 5. UseScroll
 
 Tracking scroll position and implementing scroll-based effects are common requirements in web development. The `useScroll` hook provides access to the scroll position and handles scroll event listeners.
@@ -211,6 +219,8 @@ function useScroll() {
 ```javascript
 const scrollPosition = useScroll();
 ```
+
+[🔝 Back to table of contents](#table-of-contents)
 
 ## 6. UseIntersectionObserver
 
@@ -247,6 +257,8 @@ const ref = useRef(null);
 const intersecting = useIntersectionObserver(ref, { threshold: 0.5 });
 ```
 
+[🔝 Back to table of contents](#table-of-contents)
+
 ## 7. UseAnimation
 
 Animating elements in React can be challenging. The useAnimation hook simplifies this task by abstracting away the complexities of animation libraries like GSAP or Framer Motion.
@@ -274,6 +286,8 @@ function useAnimation(options) {
 ```javascript
 const animationRef = useAnimation({ opacity: 0, duration: 1 });
 ```
+
+[🔝 Back to table of contents](#table-of-contents)
 
 ## 8. UseDebounce
 
@@ -304,6 +318,8 @@ function useDebounce(value, delay) {
 ```javascript
 const debouncedValue = useDebounce(inputValue, 300);
 ```
+
+[🔝 Back to table of contents](#table-of-contents)
 
 ## 9. UseThrottle
 
@@ -337,6 +353,8 @@ function useThrottle(value, delay) {
 const throttledValue = useThrottle(inputValue, 300);
 ```
 
+[🔝 Back to table of contents](#table-of-contents)
+
 ## 10. UseAuthentication
 
 Managing user authentication state is a common requirement in web applications. The `useAuthentication` hook abstracts away the complexities of authentication logic, handling login/logout actions, and persisting authentication tokens securely.
@@ -367,6 +385,10 @@ function useAuthentication() {
 const { isLoggedIn, login, logout } = useAuthentication();
 ```
 
+[🔝 Back to table of contents](#table-of-contents)
+
 ## Conclusion
 
 Custom hooks are powerful tools that enable developers to encapsulate and reuse logic across React components. By leveraging the top 10 most useful custom hooks outlined in this article, developers can streamline common tasks, enhance application functionality, and build better user experiences in their React applications. Whether you’re managing form state, fetching data from APIs, or handling user authentication, custom hooks provide a flexible and efficient way to solve complex problems in React development.
+
+[🔝 Back to table of contents](#table-of-contents)
