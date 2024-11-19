@@ -32,6 +32,6 @@
 			"~/*": ["lib/*"]
 		}
 	},
-	"include": ["lib"],
+	"include": ["lib", "lib/hooks"],
 	"exclude": ["node_modules"]
 }
