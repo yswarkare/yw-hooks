@@ -1,13 +1,14 @@
-import { useState as o, useEffect as n } from "react";
-const u = (t, s = null) => {
+import { useState as n, useEffect as o } from "react";
+function u(t, r) {
   let e = sessionStorage.getItem(t);
-  return e ? JSON.parse(e) : s instanceof Function ? s() : s;
-}, f = (t, s) => {
-  const [e, r] = o(() => u(t, s));
-  return n(() => {
+  return e ? JSON.parse(e) : r instanceof Function ? r() : r;
+}
+function a(t, r) {
+  const [e, s] = n(() => u(t, r));
+  return o(() => {
     sessionStorage.setItem(t, JSON.stringify(e));
-  }, [e, t]), [e, r];
-};
+  }, [e, t]), [e, s];
+}
 export {
-  f as default
+  a as default
 };

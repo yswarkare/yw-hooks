@@ -1,13 +1,14 @@
-import { useState as s, useEffect as u } from "react";
-const n = (e, r = null) => {
+import { useState as u, useEffect as n } from "react";
+const s = (e, r = null) => {
   let t = localStorage.getItem(e);
   return t ? JSON.parse(t) : r instanceof Function ? r() : r;
-}, c = (e, r) => {
-  const [t, o] = s(() => n(e, r));
-  return u(() => {
+};
+function c(e, r) {
+  const [t, o] = u(() => s(e, r));
+  return n(() => {
     localStorage.setItem(e, JSON.stringify(t));
   }, [t, e]), [t, o];
-};
+}
 export {
   c as default
 };
