@@ -3,9 +3,9 @@ const u = (t, r) => {
   let e = sessionStorage.getItem(t);
   return e ? JSON.parse(e) : r;
 };
-function c(t, { key: r, value: e }) {
+function c(t, { type: r, payload: e }) {
   for (const s in t)
-    if (s === r)
+    if (s == r)
       return { ...t, [s]: e };
 }
 function i(t, r) {

@@ -6,10 +6,10 @@ const getStoredState = (key: string, initialState: object) => {
   return initialState;
 };
 
-function reducer (state: any, { key, value }: { key: string, value: any }) {
+function reducer (state: any, { type, payload }: { type: string, payload: any }) {
   for (const prop in state) {
-    if (prop === key) {
-      return { ...state, [prop]: value }
+    if (prop == type) {
+      return { ...state, [prop]: payload }
     }
   }
 }
