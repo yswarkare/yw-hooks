@@ -6,17 +6,18 @@ import { default as n } from "./hooks/useAsync.js";
 import { default as S } from "./hooks/useDebounce.js";
 import { default as g } from "./hooks/useEventListener.js";
 import { default as v } from "./hooks/useFetch.js";
-import { default as w } from "./hooks/useForm.js";
-import { default as z } from "./hooks/useLocalStorage.js";
+import { default as b } from "./hooks/useForm.js";
+import { default as w } from "./hooks/useLocalStorage.js";
+import { default as z } from "./hooks/useObjectReducer.js";
 import { default as E } from "./hooks/useOnScreen.js";
 import { default as L } from "./hooks/usePrevious.js";
-import { default as R } from "./hooks/useScript.js";
+import { default as P } from "./hooks/useScript.js";
 import { default as U } from "./hooks/useSessionReducer.js";
-import { default as b } from "./hooks/useSessionStorage.js";
-import { default as O } from "./hooks/useTimeout.js";
-import { default as q } from "./hooks/useToggle.js";
-import { default as G } from "./hooks/useUpdateEffect.js";
-import { default as I } from "./hooks/useWindowSize.js";
+import { default as j } from "./hooks/useSessionStorage.js";
+import { default as q } from "./hooks/useTimeout.js";
+import { default as G } from "./hooks/useToggle.js";
+import { default as I } from "./hooks/useUpdateEffect.js";
+import { default as K } from "./hooks/useWindowSize.js";
 export {
   u as ContextStateProvider,
   t as checkCookie,
@@ -28,17 +29,18 @@ export {
   S as useDebounce,
   g as useEventListener,
   v as useFetch,
-  w as useForm,
-  z as useLocalStorage,
+  b as useForm,
+  w as useLocalStorage,
+  z as useObjectReducer,
   E as useOnScreen,
   L as usePrevious,
-  R as useScript,
+  P as useScript,
   U as useSessionReducer,
-  b as useSessionStorage,
-  O as useTimeout,
-  q as useToggle,
+  j as useSessionStorage,
+  q as useTimeout,
+  G as useToggle,
   d as useUpdateContextState,
-  G as useUpdateEffect,
+  I as useUpdateEffect,
   x as useWindowResize,
-  I as useWindowSize
+  K as useWindowSize
 };

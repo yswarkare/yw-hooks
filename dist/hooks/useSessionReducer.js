@@ -1,13 +1,14 @@
-import { useReducer as n, useEffect as u } from "react";
-const c = (s, e = null) => {
-  let t = sessionStorage.getItem(s);
+import { useReducer as o, useEffect as u } from "react";
+const c = (r, e = null) => {
+  let t = sessionStorage.getItem(r);
   return t ? JSON.parse(t) : e instanceof Function ? e() : e;
-}, d = (s, e, t) => {
-  const [r, o] = n(s, e, () => c(t, e));
-  return u(() => {
-    sessionStorage.setItem(t, JSON.stringify(r));
-  }, [r, t]), [r, o];
 };
+function d(r, e, t) {
+  const [s, n] = o(r, e, () => c(t, e));
+  return u(() => {
+    sessionStorage.setItem(t, JSON.stringify(s));
+  }, [s, t]), [s, n];
+}
 export {
   d as default
 };
