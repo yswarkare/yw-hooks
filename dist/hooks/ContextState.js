@@ -1,22 +1,20 @@
 import { jsx as e } from "react/jsx-runtime";
-import { createContext as n, useEffect as u, useContext as r } from "react";
-import o from "./themes/darkTheme.js";
-import S from "./themes/lightTheme.js";
-import p from "./useSessionStorage.js";
-const C = {
-  theme: "dark"
-}, a = n(C), T = () => r(a), i = n(null), U = () => r(i), j = ({ children: s, initialState: m }) => {
-  const [t, c] = p("context-state", m);
-  u(() => {
+import { createContext as o, useEffect as C, useContext as n } from "react";
+import d from "./useSessionStorage.js";
+const p = {
+  isLoggedIn: !1
+}, r = o(p), g = () => n(r), a = o(null), P = () => n(a), U = ({ children: s, initialState: i }) => {
+  const [t, c] = d("context-state", i);
+  C(() => {
     console.log({ contextState: t });
   }, [t]);
-  const x = (d, h) => {
-    c((l) => ({ ...l, [d]: h }));
+  const x = (u, S) => {
+    c((l) => ({ ...l, [u]: S }));
   };
-  return /* @__PURE__ */ e(a.Provider, { value: t, children: /* @__PURE__ */ e(i.Provider, { value: x, children: /* @__PURE__ */ e("div", { id: "theme-context", style: t.theme === "dark" ? o(t.theme) : t.theme === "light" ? S(t.theme) : o(t.theme), children: s }) }) });
+  return /* @__PURE__ */ e(r.Provider, { value: t, children: /* @__PURE__ */ e(a.Provider, { value: x, children: s }) });
 };
 export {
-  j as ContextStateProvider,
-  T as useContextState,
-  U as useUpdateContextState
+  U as ContextStateProvider,
+  g as useContextState,
+  P as useUpdateContextState
 };

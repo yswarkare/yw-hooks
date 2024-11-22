@@ -1,18 +1,26 @@
-import { useReducer as o, useEffect as n } from "react";
-const u = (t, r) => {
-  let e = sessionStorage.getItem(t);
-  return e ? JSON.parse(e) : r;
+import { useReducer as n, useEffect as s } from "react";
+const c = (r, o) => {
+  const e = sessionStorage.getItem(r);
+  if (e && typeof e == "string" && !["undefined", "null", "", "false"].includes(e))
+    try {
+      const t = JSON.parse(e);
+      if (typeof t == "object")
+        return t;
+    } catch (t) {
+      console.log(t);
+    }
+  return o;
 };
-function c(t, { type: r, payload: e }) {
-  for (const s in t)
-    if (s == r)
-      return { ...t, [s]: e };
+function u(r, { key: o, value: e }) {
+  for (const t in r)
+    if (t == o)
+      return { ...r, [t]: e };
 }
-function i(t, r) {
-  const [e, s] = o(c, t, () => u(r, t));
-  return n(() => {
-    sessionStorage.setItem(r, JSON.stringify(e));
-  }, [e, r]), [e, s];
+function i(r, o) {
+  const [e, t] = n(u, r, () => c(o, r));
+  return s(() => {
+    sessionStorage.setItem(o, JSON.stringify(e));
+  }, [e, o]), [e, t];
 }
 export {
   i as default

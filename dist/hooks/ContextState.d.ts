@@ -1,6 +1,6 @@
 import { default as React, ReactElement } from 'react';
 export declare const useContextState: () => {
-    theme: string;
+    isLoggedIn: boolean;
 };
 export declare const useUpdateContextState: () => Function | null;
 type Props = {
