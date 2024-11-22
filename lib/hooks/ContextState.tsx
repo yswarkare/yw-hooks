@@ -1,9 +1,8 @@
 import React, { createContext, ReactElement, useContext, useEffect } from 'react';
-import { darkTheme, lightTheme } from './themes';
 import useSessionStorage from './useSessionStorage';
 
 const initialState = {
-	theme: 'dark',
+	isLoggedIn: false
 };
 
 const ContextState = createContext(initialState);
@@ -37,18 +36,7 @@ export const ContextStateProvider = ({ children, initialState }: Props) => {
 	return (
 		<ContextState.Provider value={contextState}>
 			<UpdateContextState.Provider value={updateContextState}>
-				<div
-					id={`theme-context`}
-					style={
-						contextState.theme === 'dark'
-							? darkTheme(contextState.theme)
-							: contextState.theme === 'light'
-								? lightTheme(contextState.theme)
-								: darkTheme(contextState.theme)
-					}
-				>
-					{children}
-				</div>
+				{children}
 			</UpdateContextState.Provider>
 		</ContextState.Provider>
 	);

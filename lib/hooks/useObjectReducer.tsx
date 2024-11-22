@@ -1,15 +1,22 @@
 import { useEffect, useReducer } from 'react';
 
 const getStoredState = (key: string, initialState: object) => {
-  let storedState = sessionStorage.getItem(key);
-  if (storedState) return JSON.parse(storedState);
+  const storedState = sessionStorage.getItem(key);
+  if (Boolean(storedState)! && typeof storedState === 'string' && !['undefined', 'null', '', 'false'].includes(storedState)) {
+    try {
+      const obj = JSON.parse(storedState);
+      if (typeof obj === 'object') return obj;
+    } catch (error) {
+      console.log(error)
+    }
+  };
   return initialState;
 };
 
-function reducer (state: any, { type, payload }: { type: string, payload: any }) {
+function reducer (state: any, { key, value }: { key: string, value: any }) {
   for (const prop in state) {
-    if (prop == type) {
-      return { ...state, [prop]: payload }
+    if (prop == key) {
+      return { ...state, [prop]: value }
     }
   }
 }
